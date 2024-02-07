@@ -2,34 +2,11 @@ import { makeAutoObservable } from 'mobx';
 
 export default class DeviceStore {
   constructor() {
-    this._types = [
-      { id: 1, name: 'phones' },
-      { id: 2, name: 'frezzes' },
-      { id: 3, name: 'nout' },
-      { id: 4, name: 'abc' },
-    ];
+    this._types = [];
 
-    this._brands = [
-      { id: 1, name: 'Samsung' },
-      { id: 2, name: 'Apple' },
-    ];
+    this._brands = [];
 
-    this._devices = [
-      {
-        id: 1,
-        name: `iphone`,
-        price: 1000,
-        rating: 5,
-        img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSLxX_nTg27V3ZsNTRpoQGXczoUF-A7Oo8rBqU01qQLxiRBfQeiIkXjSgXYyL3ggoKvOUoiDf2yv8zueJXjdiIZkggJS8JP-4zLwZ-JZu9JHWXp6hbHfMyIR7UH8gCkpcse6-0klg&usqp=CAc',
-      },
-      {
-        id: 2,
-        name: `iphone`,
-        price: 1000,
-        rating: 5,
-        img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSLxX_nTg27V3ZsNTRpoQGXczoUF-A7Oo8rBqU01qQLxiRBfQeiIkXjSgXYyL3ggoKvOUoiDf2yv8zueJXjdiIZkggJS8JP-4zLwZ-JZu9JHWXp6hbHfMyIR7UH8gCkpcse6-0klg&usqp=CAc',
-      },
-    ];
+    this._devices = [];
     this._selectedType = {};
     this._selectedBrand = {};
     makeAutoObservable(this);
