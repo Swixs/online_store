@@ -53,6 +53,7 @@ const Auth = observer(() => {
           <Form.Control
             placeholder="input your password"
             className="mt-3"
+            type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
